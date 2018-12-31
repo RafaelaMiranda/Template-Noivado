@@ -3,6 +3,10 @@ body, *{
     margin: 0;
 }
 
+html, body{
+    height:100%;
+}
+
 /* NAVBAR */
 
 nav{
@@ -60,12 +64,12 @@ nav .links{
     top:100%;
     left:0;
     box-sizing: content-box !important;
-    margin-left: 530px;
+    margin-left: 535px;
     margin-top: -18px;
 }
 
 .call h3:before{
-    margin-left: 790px !important;
+    margin-left: 850px !important;
 }
 
 .call h1{
@@ -103,6 +107,7 @@ nav .links{
     color: #524261;
     padding-left: 200px;
     padding-top: 30px;
+    height: 100%;
 }
 
 .form .back{
@@ -112,10 +117,14 @@ nav .links{
 }
 
 .form h2{
-    margin-top: 50px;
+    margin-top: 80px;
     font-family: "Snell Roundhand";
     font-size: 28px;
     margin-bottom: 35px;
+}
+
+.form div form{
+    margin-top: 80px;
 }
 
 .form form section div input, .form form div input {
@@ -140,7 +149,7 @@ nav .links{
 	flex-wrap: wrap;
 }
 
-.form form div button{
+.form div form div button{
     background-color: rgba(123,99,146,1);
     color: white;
     font-family: "Futura LT Book", sans-serif;
@@ -151,6 +160,149 @@ nav .links{
     margin-top: 15px;
 }
 
+/* HISTÓRIA */
+
+.history{
+    text-align: center;
+    background-color: rgba(221,249,251,1);
+    color: #524261;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.history h2{
+    margin-top: 80px;
+    font-family: "Snell Roundhand";
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.feather{
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.boyfriends{
+    
+    display: flex;
+}
+
+.boyfriends div{
+   flex: 50%;
+   margin-bottom: 150px;
+}
+
+.fiancee{
+    margin-left: 15%;
+}
+
+.engaged{
+    margin-right: 15%;
+}
+
+.boyfriends div h4{
+    font-family: "Futura LT Book", sans-serif;
+    font-size: 17px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.boyfriends div p{
+    font-family: "Futura LT Book", sans-serif;
+    font-size: 16px;
+    width: 360px;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+/* GALERIA */
+
+.galery{
+    flex: 1;
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.photo-2, .photo-3, .photo-4{
+    padding-left: 15px;
+}
+
+/* MODAL IMAGE */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#myImg:hover {
+    opacity: 0.7;
+}
+  
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
 
 /* FOOTER */
 
