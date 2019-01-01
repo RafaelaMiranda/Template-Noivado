@@ -528,6 +528,13 @@ nav .links{
     .modal-content {
       width: 100%;
     }
+
+    nav>div>a{
+        color: #524261;
+        font-family: "Futura LT Book", sans-serif;
+        text-decoration: none;
+        margin-right: 35px;
+    }
 }
 
 @media only screen and (min-width: 768px){
