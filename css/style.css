@@ -69,7 +69,7 @@ nav .links{
 }
 
 .call h3:before{
-    margin-left: 850px !important;
+    margin-left: 780px !important;
 }
 
 .call h1{
@@ -86,7 +86,7 @@ nav .links{
     padding-bottom: 70px;
 }
 
-.call button{
+.call button,  .marriage button{
     background-color: rgba(123,99,146,1);
     color: white;
     font-family: "Futura LT Book", sans-serif;
@@ -116,11 +116,13 @@ nav .links{
     color: #524261;
 }
 
-.form h2{
-    margin-top: 80px;
+.form>h4{
     font-family: "Snell Roundhand";
-    font-size: 28px;
-    margin-bottom: 35px;
+    font-size: 30px;
+    position:relative;
+    width:auto;
+    font-weight:500;
+    margin-top: 50px;
 }
 
 .form div form{
@@ -171,11 +173,14 @@ nav .links{
     padding-top: 30px;
 }
 
-.history h2{
-    margin-top: 80px;
+.history h4{
     font-family: "Snell Roundhand";
-    font-size: 28px;
-    margin-bottom: 35px;
+    font-size: 30px;
+    position:relative;
+    width:auto;
+    font-weight:500;
+    margin-bottom: 25px;
+    padding-top: 30px;
 }
 
 .feather{
@@ -297,12 +302,72 @@ nav .links{
     text-decoration: none;
     cursor: pointer;
 }
+
+/* CASAMENTO */
+
+.marriage{
+    text-align: center;
+    background-color: rgba(221,249,251,1);
+    color: #524261;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.marriage .day{
+    font-family: "Snell Roundhand";
+    font-size: 30px;
+    position:relative;
+    width:auto;
+    font-weight:500;
+    margin-bottom: 25px;
+    padding-top: 30px;
+}
+
+.marriage p{
+    font-family: "Futura LT Book", sans-serif;
+    font-size: 14px;
+}
+
+.marriage .when{
+    margin-bottom: 20px;
+}
+
+.marriage .when p, .marriage .where p{
+    padding-bottom: 15px;
+}
+
+.marriage button{
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.background-marriage{
+    background: url("../images/marriage.jpg") center fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* MEDIA QUERIES */
   
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
 }
+
+@media only screen and (min-width: 768px){
+    #myImg {
+        height: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
 
 /* FOOTER */
 
