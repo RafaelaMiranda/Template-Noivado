@@ -89,7 +89,8 @@ nav .links{
 }
 
 .call button,  
-.marriage button{
+.marriage button,
+.welcome button{
     background-color: rgba(123,99,146,1);
     color: white;
     font-family: "Futura LT Book", sans-serif;
@@ -212,7 +213,8 @@ nav .links{
 
 .boyfriends div h4, 
 .party .madrinhas .bridesmaids h4, 
-.party .padrinhos .godfathers h4{
+.party .padrinhos .godfathers h4,
+.welcome h4{
     font-family: "Futura LT Book", sans-serif;
     font-size: 17px;
     padding-top: 23px;
@@ -324,7 +326,10 @@ nav .links{
 
 .marriage .day, 
 .party .brid, 
-.party .godf{
+.party .godf,
+.welcome .local,
+.list h4,
+.place h4{
     font-family: "Snell Roundhand";
     font-size: 30px;
     position:relative;
@@ -400,7 +405,9 @@ nav .links{
 }
 
 .party .madrinhas .bridesmaids p, 
-.party .padrinhos .godfathers p{
+.party .padrinhos .godfathers p,
+.welcome p,
+.list p{
     font-family: "Futura LT Book", sans-serif;
     font-size: 16px;
     margin-left: 35px;
@@ -446,6 +453,74 @@ nav .links{
     stroke-width: 6px;
 }
 
+/* DETALHES */
+
+.welcome{
+    background-color: rgba(221,249,251,1);
+    text-align: center;
+    color: #524261;
+}
+
+.welcome h4{
+    position: relative;
+    width: auto;
+    font-weight: 500;
+}
+
+.welcome p{
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-bottom: 3%;
+}
+
+.welcome button{
+    margin-bottom: 10%;
+}
+
+.list{
+    text-align: center;
+    color: #524261;
+}
+
+.list p{
+    margin-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.shopping{
+    display: flex;
+    flex: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+}
+
+.shopping img{
+    margin: 5%;
+}
+
+/* MAPA */
+
+.place{
+    text-align: center;
+    color: #524261;
+    padding-bottom: 5%;
+    background-color: rgba(221,249,251,1);
+}
+
+.place p{
+    text-align: center;
+    font-family: "Futura LT Book", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
 
 /* MEDIA QUERIES */
   
@@ -462,8 +537,6 @@ nav .links{
         margin-right: 5%;
     }
 }
-
-
 
 /* FOOTER */
 

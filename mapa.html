@@ -8,6 +8,8 @@
     <title>Bella e Alberto</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/css/atlas.min.css?api-version=1" type="text/css" />
+    <script src="https://atlas.microsoft.com/sdk/js/atlas.min.js?api-version=1"></script>
 </head>
 
 <body>
@@ -16,26 +18,20 @@
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="historia.html">Nossa História</a>
-                <a href="#">Casamento</a>
+                <a href="casamento.html">Casamento</a>
                 <a href="festa.html">Festa</a>
                 <a href="detalhes.html">Detalhes</a>
             </div>
         </nav>
     </header>
-    <div class="marriage">
-        <h4 class="day">O Dia</h4>
+    <div class="place">
+        <h4>Como Chegar</h4>
         <img src="images/feather.webp" class="feather">
-        <div class="when">
-            <p>Quando</p>
-            <p>01 de set de 2023 19:00</p>
-        </div>
-        <div class="where">
-            <p>Onde</p>
-            <p>Capela Santa Maria, <br> Av. Bernardino de Campos 98, <br> São Paulo, SP 12345-678, BRASIL</p>
-        </div>
-        <button onclick="location.href='confirmar.html'">Registre-se Agora</button>
+        <p>Salão Plaza <br> Av. Bernardino de Campos 98 São Paulo, SP 12345-678</p>
     </div>
-    <div class="background-marriage"></div>
+    <div id="map">
+
+    </div>
     <footer>
         <div class="cop">
             © por Bella e Alberto. Criado orgulhosamente por <a href="https://rafaelamiranda.000webhostapp.com/" target="_blank">Rafaela
@@ -47,7 +43,20 @@
             <a href="https://www.instagram.com/itsrafagomes" target="_blank"><img src="images/instagram.webp" alt=""></a>
         </div>
     </footer>
-
+    <script>
+        atlas.setSubscriptionKey('tTk1JVEaeNvDkxxnxHm9cYaCvqlOq1u-fXTvyXn2XkA');
+        var map = new atlas.Map('map');
+        map.events.add('load', function (e) {
+            map.markers.add(new atlas.HtmlMarker({
+                color: 'Red',
+                text: '1',
+                position: [-405, -20],
+                popup: new atlas.Popup({
+                    content: '<div style="padding:10px">Hello World</div>'
+                })
+            }));
+        });
+    </script>
 
 </body>
 
