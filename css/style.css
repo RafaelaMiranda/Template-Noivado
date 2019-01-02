@@ -560,6 +560,27 @@ nav .links{
         margin-right: 8%;
         margin-top: 3%;
     }
+
+    .galery{
+        display: none;
+    }
+
+    .boyfriends div p{
+        margin-left: 3%;
+    }
+
+    .boyfriends div img{
+        width: 80%;
+    }
+
+    .fiancee{
+        margin-left: -25%;
+    }
+
+    .engaged{
+        margin-left: -139%;
+        padding-top: 170%;
+    }
     
 }
 
