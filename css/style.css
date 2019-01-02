@@ -595,7 +595,7 @@ nav .links{
     }
 
     .mobile{
-        display: flex;
+        display: block;
     }
 
     .desktop{
