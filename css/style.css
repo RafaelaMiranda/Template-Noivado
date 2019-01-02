@@ -614,7 +614,10 @@ nav .links{
         width: 247px !important;
     }
 
-
+    .call h3:before, 
+    .call h3:after{
+        display: none;
+    }
     
 }
 
