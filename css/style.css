@@ -529,12 +529,32 @@ nav .links{
       width: 100%;
     }
 
-    nav>div>a{
+    .links a{
         color: #524261;
         font-family: "Futura LT Book", sans-serif;
         text-decoration: none;
         margin-right: 35px;
+        line-height: 30px;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 14%;
+    }
+
+    footer .cop{
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    footer .net{
+        text-align: center !important;
+        padding-right: 0;
+        margin-top: 8%;
+    }
+    
 }
 
 @media only screen and (min-width: 768px){
