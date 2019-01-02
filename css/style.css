@@ -606,6 +606,14 @@ nav .links{
         display: none;
     }
 
+    .form{
+        padding-left: 5% !important;
+    }
+
+    .form form div input{
+        width: 247px !important;
+    }
+
 
     
 }
