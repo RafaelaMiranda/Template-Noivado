@@ -384,6 +384,10 @@ nav .links{
     padding-top:  50px !important;
 }
 
+.mobile{
+    display: none;
+}
+
 .party .godf{
     padding-top:  50px !important;
     padding-bottom: 50px !important;
@@ -581,6 +585,24 @@ nav .links{
         margin-left: -139%;
         padding-top: 170%;
     }
+
+    .svg-bridesmaid, .svg-godfather{
+        display: none;
+    }
+
+    .bridesmaids div img{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+
     
 }
 
