@@ -575,10 +575,7 @@ nav .links{
 
     .boyfriends div img{
         width: 80%;
-    }
-
-    .fiancee{
-        margin-left: -25%;
+        margin-left: 8%;
     }
 
     .engaged{
@@ -618,10 +615,18 @@ nav .links{
     .call h3:after{
         display: none !important;
     }
+
+    #map{
+        display: none;
+    }
+
+    .party{
+        text-align: right;
+    }
     
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     #myImg {
         height: 90%;
         margin-left: 5%;
@@ -642,10 +647,6 @@ nav .links{
 
     .fiancee{
         margin-left: -9%;
-    }
-
-    .engaged p{
-        margin-left: -1% !important;
     }
 
     .galery>.photo-3, .galery>.photo-4{
