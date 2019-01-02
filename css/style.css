@@ -616,7 +616,7 @@ nav .links{
 
     .call h3:before, 
     .call h3:after{
-        display: none;
+        display: none !important;
     }
     
 }
