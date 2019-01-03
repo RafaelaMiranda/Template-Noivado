@@ -66,12 +66,6 @@ nav .links{
     top:100%;
     left:0;
     box-sizing: content-box !important;
-    margin-left: 40%;
-    margin-top: -18px;
-}
-
-.call h3:before{
-    margin-left: 57.5% !important;
 }
 
 .call h1{
@@ -140,7 +134,6 @@ nav .links{
     border: 0.5px solid #A899B6;
     height: 30px;
     margin-right: 30px;
-    width: 43%;
     margin-bottom: 25px;
 }
 
@@ -194,17 +187,12 @@ nav .links{
 }
 
 .boyfriends{
-    
     display: flex;
 }
 
 .boyfriends div{
    flex: 50%;
    margin-bottom: 150px;
-}
-
-.fiancee{
-    margin-left: 15%;
 }
 
 .engaged{
@@ -492,13 +480,7 @@ nav .links{
     padding-right: 20%;
 }
 
-.shopping{
-    display: flex;
-    flex: 1;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 5%;
-}
+
 
 .shopping img{
     margin: 5%;
@@ -632,6 +614,10 @@ nav .links{
         margin-left: -25%;
     }
 
+    .place{
+        padding-bottom: 30%;
+    }
+
 }
 
 @media only screen and (min-width: 768px){
@@ -701,6 +687,72 @@ nav .links{
 
     .form form div input{
         width: 80%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .call h3:before, 
+    .call h3:after{
+        margin-left: 40%;
+        margin-top: -18px;
+}
+
+    .call h3:before{
+        margin-left: 57.5% !important;
+    }
+
+    .fiancee{
+        margin-left: 15%;
+    }
+
+    .galery>.photo-3, 
+    .galery>.photo-4{
+        display: block !important;
+    }
+
+    #myImg {
+        height: 82%;
+    }
+
+    .bridesmaids, .godfathers{
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 4%;
+    }
+
+    .bridesmaids div img, .godfathers div img{
+        height: 70%;
+    }
+
+    .svg-bridesmaid{
+        position:absolute;
+        top:260px;
+        left:360px;
+        color:rgb(100, 99, 146);
+    }
+
+    .svg-godfather{
+        position:absolute;
+        top:1160px;
+        left:360px;
+        color:rgb(99, 93, 177);
+    }
+
+    .shopping{
+        display: flex;
+        flex: 1;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 5%;
+    }
+
+    .place h4{
+        padding-top: 5%;
+    }
+
+    .form form div input{
+        width: 45.5%;
     }
 }
 
